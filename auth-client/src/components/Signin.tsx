@@ -15,7 +15,6 @@ const Signin: React.FC = () => {
       alert('Signin successful');
       // Redirect to dashboard after successful login
       localStorage.setItem('isAuthenticated', 'true');
-
       navigate('/dashboard');
     } catch (error) {
       alert('Signin failed: ' + error);
